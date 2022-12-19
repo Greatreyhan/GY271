@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"gy271\startup_stm32f407xx.o"
+"gy271\main.o"
+"gy271\stm32f4xx_it.o"
+"gy271\stm32f4xx_hal_msp.o"
+"gy271\stm32f4xx_hal_i2c.o"
+"gy271\stm32f4xx_hal_i2c_ex.o"
+"gy271\stm32f4xx_hal_rcc.o"
+"gy271\stm32f4xx_hal_rcc_ex.o"
+"gy271\stm32f4xx_hal_flash.o"
+"gy271\stm32f4xx_hal_flash_ex.o"
+"gy271\stm32f4xx_hal_flash_ramfunc.o"
+"gy271\stm32f4xx_hal_gpio.o"
+"gy271\stm32f4xx_hal_dma_ex.o"
+"gy271\stm32f4xx_hal_dma.o"
+"gy271\stm32f4xx_hal_pwr.o"
+"gy271\stm32f4xx_hal_pwr_ex.o"
+"gy271\stm32f4xx_hal_cortex.o"
+"gy271\stm32f4xx_hal.o"
+"gy271\stm32f4xx_hal_exti.o"
+"gy271\stm32f4xx_hal_tim.o"
+"gy271\stm32f4xx_hal_tim_ex.o"
+"gy271\system_stm32f4xx.o"
+--strict --scatter "GY271\GY271.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GY271.map" -o GY271\GY271.axf
